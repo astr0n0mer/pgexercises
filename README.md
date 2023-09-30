@@ -4,8 +4,8 @@
 
 ### Categories
 
-- [Basic](./basic.sql)
-- [Joins and Subqueries](./joins-and-subqueries.sql)
+- [Basic](./basic/README.md)
+- [Joins and Subqueries](./joins-and-subqueries/README.md)
 
 ### Resources
 
