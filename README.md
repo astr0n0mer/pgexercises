@@ -6,6 +6,7 @@
 
 - [Basic](./basic/README.md)
 - [Joins and Subqueries](./joins-and-subqueries/README.md)
+- [Modifying data](./modifying-data/README.md)
 
 ### Resources
 
