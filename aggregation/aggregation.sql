@@ -126,3 +126,33 @@ ORDER  BY revenue;
 
 -- Output the facility id that has the highest number of slots booked
 -- https://pgexercises.com/questions/aggregates/fachours2.html
+SELECT facid
+       , SUM(slots) AS "Total Slots"
+FROM   cd.bookings
+GROUP  BY facid
+ORDER  BY "Total Slots" DESC
+LIMIT  1;
+
+-- List the total slots booked per facility per month, part 2
+-- https://pgexercises.com/questions/aggregates/fachoursbymonth3.html
+SELECT facid
+       , DATE_PART('month', starttime) AS month
+       , Sum(slots)                    AS slots
+FROM   cd.bookings
+WHERE  DATE_PART('year', starttime) = 2012
+GROUP  BY rollup( facid, month )
+ORDER  BY facid;
+
+-- List the total hours booked per named facility
+-- https://pgexercises.com/questions/aggregates/fachours3.html
+SELECT f.facid
+       , f.NAME
+       , Round(Sum(b.slots) / 2.0, 2) AS "Total Hours"
+FROM   cd.bookings AS b
+       INNER JOIN cd.facilities AS f using (facid)
+GROUP  BY f.facid
+          , f.NAME
+ORDER  BY facid;
+
+-- List each member's first booking after September 1st 2012
+-- https://pgexercises.com/questions/aggregates/nbooking.html
