@@ -4,12 +4,12 @@
 
 ### Categories
 
-- [Basic](./basic/README.md)
+- [Simple SQL Queries](./basic//README.md)
 - [Joins and Subqueries](./joins-and-subqueries/README.md)
 - [Modifying data](./modifying-data/README.md)
-- [Aggregation](./aggregation/README.md)
-- [String Operations](./string-operations/README.md)
-- [Working with Timestamps](./working-with-timestamps/README.md)
+- [Aggregation](./aggregates/README.md)
+- [Working with Timestamps](./date/README.md)
+- [String Operations](./string/README.md)
 
 ### Resources
 
