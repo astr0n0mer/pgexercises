@@ -9,6 +9,7 @@
 - [Modifying data](./modifying-data/README.md)
 - [Aggregation](./aggregation/README.md)
 - [String Operations](./string-operations/README.md)
+- [Working with Timestamps](./working-with-timestamps/README.md)
 
 ### Resources
 
